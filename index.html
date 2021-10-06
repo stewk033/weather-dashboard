@@ -5,14 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/images/thunder.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Weather Dashboard</title>
+    <title>Weather On Demand</title>
 
 </head>
 <body>
     <header>
         <h1><strong>Weather On Demand</strong></h1>
     </header>
+
+    <main class="container">
+        <div>
+            <h3 class="card-header text-uppercase">Search by City:</h3>
+            <form>
+                <label>City Name</label>
+                <input name="location" id="location" type="text" />
+                <button type="submit" class="btn">Get Weather</button>
+            </form>
+        </div>
+        <div class="col-12 m-3">
+            <h2>Showing Weather details for: </h2>
+        </div>
+
+        <!-- CURRENT WEATHER CONTAINER -->    
+        <div class="row ml-2 border border-dark rounded">
+            <div class="col-sm-12" id="current-weather">
+                <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
+                <p class="current">Temperature: </p>
+                <p class="current">Humidity: </p> 
+                <p class="current">Wind Speed: </p>
+                <p class="current">UV index: </p> 
+            </div>
+        </div>
+
+        <!-- 5 DAY FORECAST CONTAINERS -->    
+        <div class="col-sm-12" id ="future-weather">
+            <h3>5-Day Forecast:</h3>
+            <div class="row text-light">
+                <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                    <p>Temp: </p>
+                    <p>Humidity: </p>
+                </div>
+                <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                    <p>Temp: </p>
+                    <p>Humidity: </p>
+                </div>
+                <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                    <p>Temp: </p>
+                    <p>Humidity: </p>
+                </div>
+                <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
+                    <p>Temp: </p>
+                    <p>Humidity: </p>
+                </div>
+                <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
+                    <p>Temp: </p>
+                    <p>Humidity: </p>
+                </div>
+            </div>
+        </div>
+    </main>
     
     <script src="./assets/script.js"></script> 
 </body>

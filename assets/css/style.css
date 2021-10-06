@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(145, 195, 245);
+    text-decoration: underline;
+}
