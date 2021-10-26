@@ -15,3 +15,7 @@ button:hover {
     background-color: rgb(145, 195, 245);
     text-decoration: underline;
 }
+
+.forecast {
+    font-size: 0.9em;
+}

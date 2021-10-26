@@ -8,7 +8,7 @@ This assignment requires the creation of a dashboard application which provides 
 
 * _AS A traveler_
 * _I WANT to see the weather outlook for multiple cities_
-* _SO THAT I can plan a trip accordingly_
+* _SO THAT I can plan my trip accordingly_
 
 ## Acceptance Criteria
 
