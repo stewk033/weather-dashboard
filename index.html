@@ -34,36 +34,45 @@
         <div class="row ml-2 border border-dark rounded">
             <div class="col-sm-12" id="current-weather">
                 <h3 class="city-name mb-1 mt-2 bolder" id="current-city"></h3>
-                <p class="current">Temperature: </p>
-                <p class="current">Humidity: </p> 
-                <p class="current">Wind Speed: </p>
-                <p class="current">UV index: </p> 
+                <p>Temperature: <span class="current" id="temperature"></span></p>
+                <p>Humidity: <span class="current" id="humidity"></span></p> 
+                <p>Wind Speed: <span class="current" id="wind-speed"></span></p>
+                <p>UV index: <span class="current rounded py-2 px-2" id="uv-index"></span></p> 
             </div>
         </div>
-
         <!-- 5 DAY FORECAST CONTAINERS -->    
         <div class="col-sm-12" id ="future-weather">
             <h3>5-Day Forecast:</h3>
             <div class="row text-light">
                 <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
-                    <p>Temp: </p>
-                    <p>Humidity: </p>
+                    <p id="fDate0"></p>
+                    <img id="fImg0" src = "">
+                    <p>Temp: <span id="fTemp0"></span></p>
+                    <p>Humidity: <span id="fHumidity0"></span></p>
                 </div>
                 <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
-                    <p>Temp: </p>
-                    <p>Humidity: </p>
+                    <p id="fDate1"></p>
+                    <img id="fImg1" src = "">
+                    <p>Temp: <span id="fTemp1"></span></p>
+                    <p>Humidity: <span id="fHumidity1"></span></p>
                 </div>
                 <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                    <p>Temp: </p>
-                    <p>Humidity: </p>
+                    <p id="fDate2"></p>
+                    <img id="fImg2" src = "">
+                    <p>Temp: <span id="fTemp2"></span></p>
+                    <p>Humidity: <span id="fHumidity2"></span></p>
                 </div>
                 <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded">
-                    <p>Temp: </p>
-                    <p>Humidity: </p>
+                    <p id="fDate3"></p>
+                    <img id="fImg3" src = "">
+                    <p>Temp: <span id="fTemp3"></span></p>
+                    <p>Humidity: <span id="fHumidity3"></span></p>
                 </div>
                 <div class="col-sm-2 bg-primary forecast text-white ml-2 mb-3 p-2 mt-2 rounded" >
-                    <p>Temp: </p>
-                    <p>Humidity: </p>
+                    <p id="fDate4"></p>
+                    <img id="fImg4" src = "">
+                    <p>Temp: <span id="fTemp4"></span></p>
+                    <p>Humidity: <span id="fHumidity4"></span></p>
                 </div>
             </div>
             <div class="col-12" id="savedSearches">

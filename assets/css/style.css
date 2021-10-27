@@ -19,3 +19,7 @@ button:hover {
 .forecast {
     font-size: 0.9em;
 }
+
+span {
+    font-size: 1em;
+}

@@ -24,20 +24,21 @@ This assignment requires the creation of a dashboard application which provides 
 * _WHEN I click on a city in the search history_
 * _THEN I am again presented with current and future conditions for that city_
 
-## Screenshots
-
 ## Credits
 
 Provided with a mock-up from which to frame my app.
 
-![MOCKUP]()
+![MOCKUP](https://github.com/stewk033/weather-dashboard/blob/main/assets/images/06-server-side-apis-homework-demo.png)
+
+## Screenshot
+
 
 ## My Solution
 
-Live URL: ()
+Live URL: (https://stewk033.github.io/weather-dashboard/)
 
 My Code:
 
-- [HTML] ()
-- [CSS] ()
-- [JS] ()
+- [HTML] (https://github.com/stewk033/weather-dashboard/blob/main/index.html)
+- [CSS] (https://github.com/stewk033/weather-dashboard/blob/main/assets/css/style.css)
+- [JS] (https://github.com/stewk033/weather-dashboard/blob/main/assets/js/script.js)
