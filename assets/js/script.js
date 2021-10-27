@@ -42,6 +42,7 @@ var getWeather = function (city) {
                 localStorage.setItem("RecentSearches", JSON.stringify(searches))
             }
         
+
     // format the openweather api url
     var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&APPID=2233fda853b9a2c75e41ce5024c239aa'
 
@@ -64,8 +65,7 @@ var getWeather = function (city) {
                                 uvindex: data3.value,
                                 forecast: data2.list.filter((element, i) => i === 4 || i === 12 || i === 20 || i === 28 || i === 36)
                             }
-                            console.log(info)
-                           displayInfo(info);
+                            displayInfo(info);
                         })
                     })
                 })
@@ -82,9 +82,10 @@ var formSubmitHandler = function(event) {
         if (location) {
         getWeather(location);
         nameInputEl.value = "";
-        } else {alert("Please enter the name of a city")};
+        } else {
+        alert("Please enter the name of a city");
+        }
 }
-
 // function to display weather info
 var displayInfo = function(info) {
     temperature.textContent = `${Math.floor(parseFloat(info.temperature) - 273.15) * 9/5 + 32} °F`
@@ -93,13 +94,18 @@ var displayInfo = function(info) {
     uvIndex.textContent = info.uvindex
     locationSearchTerm.textContent = info.cityName
 
-    console.log(forecast[0].children)
-    console.log(info);
+// adding icons to 5 day forecast
+    for (var i = 0; i < info.forecast.length; i++) {
+        var iconurl = "https://openweathermap.org/img/w/" + info.forecast[i].weather[0].icon + ".png";
+        forecast[i].children[0].textContent = info.forecast[i].dt_txt
+        forecast[i].children[1].src = iconurl
+        forecast[i].children[2].firstChild.textContent = `Temp: ${Math.floor(parseFloat(info.forecast[i].main.temp) - 273.15) * 9/5 + 32} °F`
+        forecast[i].children[3].firstChild.textContent = 'Humidity: ' + info.forecast[i].main.humidity + '%'
+    }
 }
 
 // recording recent searches
 var searches = JSON.parse(localStorage.getItem("RecentSearches"))
-
     if (searches) {
         savedSearches.appendChild(document.createElement("select"))
         for (var i = 0; i < searches.length; i++) {
