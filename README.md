@@ -30,9 +30,6 @@ Provided with a mock-up from which to frame my app.
 
 ![MOCKUP](https://github.com/stewk033/weather-dashboard/blob/main/assets/images/06-server-side-apis-homework-demo.png)
 
-## Screenshot
-
-
 ## My Solution
 
 Live URL: (https://stewk033.github.io/weather-dashboard/)
